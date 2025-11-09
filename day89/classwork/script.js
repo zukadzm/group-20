@@ -3,9 +3,17 @@
 let listn = ["Zuka", 16, 2.9, "Qoridze", 31]
 
 // ---გამოიტანეთ სიის თითოეული ელემენტი ცალ ცალკე
-
 console.log(listn)
-
 // ---გამოიტანე სიის თითოეული ელემენტი for loop ის გამოყენებით
+for(let i = 0; i < listn.length; i++) {
+    console.log(i)
+}
 
 // ---გამოიტანე სიის თითოეული ელემენტი while loop ის გამოყენებით
+
+let i = 0;
+
+while(i < listn.length) {
+    console.log(i)
+    i++
+}

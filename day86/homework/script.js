@@ -34,16 +34,16 @@
 // თუ მხოლოდ პირველი ასოები ემთხვევა მაშინ - “პირველი ასოები ემთხვევა”
 // სხვა შემთხვევაში — "არ ემთხვევა".
 
-const firstWord = prompt("Enter first word")
-const secondWord = prompt("Enter second word")
+// const firstWord = prompt("Enter first word")
+// const secondWord = prompt("Enter second word")
 
-if(firstWord == secondWord) {
-    console.log("სიტყვები ემთხვევა")
-}else if(firstWord[0] == secondWord[0]) {
-    console.log("პირველი ასოები ემთხვევა")
-} else {
-    console.log("არ ემთხვევა")
-}
+// if(firstWord == secondWord) {
+//     console.log("სიტყვები ემთხვევა")
+// }else if(firstWord[0] == secondWord[0]) {
+//     console.log("პირველი ასოები ემთხვევა")
+// } else {
+//     console.log("არ ემთხვევა")
+// }
 
 // 4. შეიყვანე ასაკი და ენერგიის დონე (1–10).
 // თუ ასაკი 20-ზე ნაკლებია და ენერგია მეტია 7-ზე → "გირჩევ სირბილს!",
