@@ -54,8 +54,21 @@ if(user5 < 5) {
 
 // მოცემული გაქვთ სია: [10, 100, 200, 300, 150, 20, 40, 1000, 150, 125, 900] ეს სია დაალაგეთ ზრდადობით.
 
-let arr = [10, 100, 200, 300, 150, 20, 40, 1000, 150, 125, 900]
-console.log(arr.sort())
+
+let listn2 = [10, 100, 200, 300, 150, 20, 40, 1000, 150, 125, 900]
+
+for(let i = 0; i < listn2.length; i++) {
+    for(let j = 0; j < listn2.length - 1; j++) {
+        if(listn2[j] > listn2[j + 1]) {
+            let res = listn2[j]
+            listn2[j] = listn2[j + 1]
+            listn2[j + 1] = res
+        }
+     }
+}
+console.log(listn2)
+
+// let numbers = [10, 100, 200, 300, 150, 20, 40, 1000, 150, 125, 900];
 
 // მოცემული გაქვთ სია:
 // [
@@ -65,12 +78,29 @@ console.log(arr.sort())
 // ] // ერთი სია არის და ამ სიის შიგნით სამი სია,
 // თითოეული ეს სია შეაერთეთ და გადაიყვანეთ ათობით სისტემაში. შემდეგ დაალაგეთ კლებადობით.
 
+let listn3 = [
+    [1, 0, 0, 1, 0],
+    [0, 1, 0, 0, 0], 
+    [0, 1, 0, 0, 1]
+] 
 
-let a = [1, 0, 0, 1, 0]
-let b =[0, 1, 0, 0, 0]
-let c =[0, 1, 0, 0, 1]
+let result = []
+for(let i = 0; < listn3.length; i++) {
+    let num = 0;
+    for(let j = 0; j < listn3.length; i++) {
+        num = num * 2 + listn3
+    }
 
-console.log(a,b,c)
-//  მასალა გადაიმეორეთ
+    result.push(num)
+}
 
-// ზოგი ვერ გავიგე
+
+for(let i = 0; i < result.length; i++) {
+    for(let j = 0; j < result.length - 1; j++) {
+        if(result[i] < result[j + 1]) {
+            let res = result[j];
+            result[j] = result[j + 1];
+            result[j + 1] = res
+        }
+    }
+}
